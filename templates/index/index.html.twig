@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<div data-mdeditor>
+    <textarea name="content" id="" cols="30" rows="10" class="content"></textarea>
+</div>
+<div id="modal" class="modal modalNone">
+    <div id="closeModal" class="close" onclick = "addClass()">
+        x
+    </div>
+</div>
+<input type="hidden" name="" id="patch_image" value="{{ path("admin-gestion-media", {id : 'mlkjhgfdfghjkl'}) }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.55.0/codemirror.min.js"></script>
+<script src="/dist/js/closeModal.js"></script>
+<script src="/dist/js/scriptImage.js"></script>
+
+{% endblock %}
